@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>City Lining Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Nav -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#">
+        <span class="brand-badge">CL</span>
+        <span class="brand-name">City Lining Works</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#products">Products</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-inner container">
+      <h1 class="hero-title">Premium Bike Accessories</h1>
+      <p class="hero-subtitle">
+        Car Seat Cover Dealer showcasing premium leather car seat covers, motorcycle accessories, and offering repair services for helmets and seat covers.
+      </p>
+      <a href="#featured" class="btn btn-primary">
+        <span aria-hidden="true">🛒</span>
+        Shop Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section class="why">
+    <div class="container">
+      <h2 class="why-title">Why Choose City Lining Works?</h2>
+      <p class="why-subtitle">
+        We’re committed to providing the best quality bike accessories
+      </p>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon blue">✓</div>
+          <h3 class="card-title">Assured Quality</h3>
+          <p class="card-text">Premium materials and rigorous checks for every product.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon orange">👥</div>
+          <h3 class="card-title">Trusted Service</h3>
+          <p class="card-text">Friendly support and easy returns on all orders.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon green">🚚</div>
+          <h3 class="card-title">Fast Delivery</h3>
+          <p class="card-text">Quick shipping with real‑time updates from dispatch.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="featured" class="featured">
+    <div class="container">
+      <h2 class="featured-title">Featured Products</h2>
+      <p class="featured-subtitle">Discover our most popular bike accessories</p>
+
+      <div class="product-grid">
+        <!-- Card 1 -->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="images/pro-helmet.jpg" alt="Professional Racing Helmet" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Professional Racing Helmet</h3>
+            <p class="product-desc">Premium quality racing helmet with advanced safety features</p>
+            <div class="product-foot">
+              <div class="price">₹2499</div>
+              <a href="#buy" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="images/commuter-helmet.jpg" alt="Urban Commuter Helmet" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Urban Commuter Helmet</h3>
+            <p class="product-desc">Stylish and safe helmet for daily city riding</p>
+            <div class="product-foot">
+              <div class="price">₹1899</div>
+              <a href="#buy" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="images/kids-helmet.jpg" alt="Kids Safety Helmet" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Kids Safety Helmet</h3>
+            <p class="product-desc">Colorful and safe helmet designed specifically for children</p>
+            <div class="product-foot">
+              <div class="price">₹1299</div>
+              <a href="#buy" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+
+      <div class="testimonial-grid">
+        <article class="t-card">
+          <div class="stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
+          <p class="t-quote">
+            "Excellent quality helmet! The safety features are top‑notch and it's very comfortable for long rides."
+          </p>
+          <p class="t-author">- Rajesh Kumar</p>
+        </article>
+
+        <article class="t-card">
+          <div class="stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
+          <p class="t-quote">
+            "The seat cover is amazing! Completely waterproof and very comfortable. Great value for money."
+          </p>
+          <p class="t-author">- Priya Sharma</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Strip -->
+  <footer id="contact" class="contact-strip">
+    <div class="container contact-grid">
+      <div class="contact-item">
+        <div class="c-icon">📞</div>
+        <h3 class="c-title">Call Us</h3>
+        <p class="c-main">+91 98765 43210</p>
+        <p class="c-sub">Mon‑Sat: 9AM‑8PM</p>
+      </div>
+
+      <div class="contact-item">
+        <div class="c-icon">✉️</div>
+        <h3 class="c-title">Email Us</h3>
+        <p class="c-main">info@cityliningworks.com</p>
+        <p class="c-sub">We reply within 24 hours</p>
+      </div>
+
+      <div class="contact-item">
+        <div class="c-icon">📍</div>
+        <h3 class="c-title">Visit Our Store</h3>
+        <p class="c-sub">No 55, Near Paari Nagar, Near Indian Bank, Kasi Theatre, Karikalan Street, Jafferkhanpet-600083</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
