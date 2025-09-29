@@ -325,7 +325,7 @@ body{
     z-index:100;          /* above header */
   }
   .nav-list{flex-direction:column;}
-  .nav-toggle{display:flex;}
+  .nav-toggle{display:flex; z-index:120; pointer-events:auto;}
   .brand-name{font-size:16px}
   .hero{padding:64px 0 84px;}
   .card-grid{grid-template-columns:1fr;}
