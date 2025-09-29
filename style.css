@@ -37,8 +37,15 @@ body{
 
 /* Containers */
 .container{
-  width:min(1100px, 92%);
+  width:min(1350px, 92%);
   margin-inline:auto;
+}
+
+.site-logo {
+  height: 20px; /* Or whatever fits your site header */
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 /* Header */
@@ -54,7 +61,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:12px 0;
+  padding:14px 0;
 }
 .brand{
   display:flex;
@@ -63,15 +70,17 @@ body{
   text-decoration:none;
   color:inherit;
 }
-.brand-badge{
-  display:grid;
-  place-items:center;
-  width:40px;height:40px;
-  border-radius:10px;
-  font-weight:700;
-  color:var(--white);
-  background:linear-gradient(135deg,#3b82f6 0%, #1e40af 60%, #f59e0b 100%);
+.brand-badge {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
+
 .brand-name{
   font-weight:700;
   letter-spacing:.2px;
