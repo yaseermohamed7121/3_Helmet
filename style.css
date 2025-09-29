@@ -27,6 +27,7 @@
 
 *{box-sizing:border-box}
 html,body{height:100%}
+html{scroll-behavior:smooth;}
 body{
   margin:0;
   font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -191,7 +192,7 @@ body{
 .card-title{margin:0 0 6px; font-size:18px;}
 .card-text{margin:0; color:var(--muted);}
 
-/* Featured */
+/* Featured (Products) */
 .featured{
   background:#ffffff;
   padding:70px 0 70px;
@@ -278,9 +279,7 @@ body{
   align-items:start;
   text-align:center;
 }
-.contact-item{
-  padding:8px 10px;
-}
+.contact-item{padding:8px 10px;}
 .c-icon{
   font-size:34px;
   width:56px; height:56px;
@@ -293,6 +292,20 @@ body{
 .c-title{margin:6px 0 6px; font-size:20px;}
 .c-main{margin:0; font-weight:700;}
 .c-sub{margin:4px 0 0; color:#9ca3af;}
+
+/* Bolt badge */
+.bolt-badge{
+  position:fixed;
+  right:16px; bottom:16px;
+  background:#111827;
+  color:#fff;
+  padding:10px 14px;
+  border-radius:12px;
+  font-size:13px;
+  text-decoration:none;
+  box-shadow:0 8px 20px rgba(0,0,0,.16);
+  opacity:.9;
+}
 
 /* Responsive */
 @media (max-width: 900px){
@@ -312,3 +325,4 @@ body{
   .product-grid{grid-template-columns:1fr;}
   .contact-grid{grid-template-columns:1fr;}
 }
+
