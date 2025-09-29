@@ -2,14 +2,14 @@
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.nav');
 
-if (toggle) {
+if (toggle && nav) {
   toggle.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 }
 
-// Simple "active" link demo for hash navigation
+// Active link highlight based on hash
 const links = document.querySelectorAll('.nav-link');
 function setActive() {
   const hash = window.location.hash || '#home';

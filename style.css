@@ -77,9 +77,9 @@ body{
   letter-spacing:.2px;
   white-space:nowrap;
 }
-.nav{
-  display:flex;
-}
+
+/* Nav */
+.nav{display:flex;}
 .nav-list{
   list-style:none;
   display:flex;
@@ -95,10 +95,7 @@ body{
   font-weight:500;
 }
 .nav-link:hover{background:#eef2ff}
-.nav-link.active{
-  background:#e6efff;
-  color:var(--brand);
-}
+.nav-link.active{background:#e6efff; color:var(--brand);}
 
 /* Mobile nav toggle */
 .nav-toggle{
@@ -109,6 +106,8 @@ body{
   background:#fff;
   align-items:center;justify-content:center;
   gap:3px;
+  z-index:120;            /* ensure on top */
+  pointer-events:auto;
 }
 .nav-toggle .bar{
   width:18px;height:2px;background:#1f2a44;border-radius:2px;display:block;
@@ -315,8 +314,16 @@ body{
 }
 @media (max-width: 640px){
   .nav{display:none;}
-  .nav.open{display:block; position:absolute; top:62px; right:4%; left:4%;
-    background:#fff; border:1px solid #e6eaf3; border-radius:12px; padding:10px;}
+  .nav.open{
+    display:block;
+    position:absolute;
+    top:62px; right:4%; left:4%;
+    background:#fff;
+    border:1px solid #e6eaf3;
+    border-radius:12px;
+    padding:10px;
+    z-index:100;          /* above header */
+  }
   .nav-list{flex-direction:column;}
   .nav-toggle{display:flex;}
   .brand-name{font-size:16px}
@@ -325,4 +332,5 @@ body{
   .product-grid{grid-template-columns:1fr;}
   .contact-grid{grid-template-columns:1fr;}
 }
+
 
