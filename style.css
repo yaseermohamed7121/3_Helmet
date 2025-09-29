@@ -99,20 +99,19 @@ body{
 
 /* Mobile nav toggle */
 .nav-toggle{
-  display:none;
-  width:40px;height:40px;
+  display:none;                 /* becomes flex on mobile */
+  width:44px; height:44px;
   border:1px solid #e6eaf3;
   border-radius:10px;
   background:#fff;
-  align-items:center;justify-content:center;
-  gap:3px;
-  z-index:120;            /* ensure on top */
-  pointer-events:auto;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;        /* stack bars vertically */
+  gap:5px;                      /* space between bars */
 }
 .nav-toggle .bar{
   width:18px;height:2px;background:#1f2a44;border-radius:2px;display:block;
 }
-
 /* Hero */
 .hero{
   background:linear-gradient(90deg, var(--grad-start), var(--grad-end));
@@ -325,7 +324,7 @@ body{
     z-index:100;          /* above header */
   }
   .nav-list{flex-direction:column;}
-  .nav-toggle{display:flex; z-index:120; pointer-events:auto;}
+  .nav-toggle{display:flex;}
   .brand-name{font-size:16px}
   .hero{padding:64px 0 84px;}
   .card-grid{grid-template-columns:1fr;}
