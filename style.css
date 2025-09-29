@@ -41,12 +41,27 @@ body{
   margin-inline:auto;
 }
 
-.site-logo {
-  height: 20px; /* Or whatever fits your site header */
-  width: auto;
-  object-fit: contain;
-  display: block;
+.brand-name {
+  font-family: 'Inter', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  background: linear-gradient(90deg, #2563eb 0%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-transform: uppercase;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  transition: background 0.3s;
 }
+.brand-name:hover {
+  background: linear-gradient(90deg, #ea580c 0%, #2563eb 100%);
+}
+
 
 /* Header */
 .site-header{
