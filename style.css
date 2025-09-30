@@ -58,10 +58,10 @@ body{
   box-shadow: 0 2px 8px rgba(37,99,235,0.08);
   transition: background 0.3s;
 }
+
 .brand-name:hover {
   background: linear-gradient(90deg, #ea580c 0%, #2563eb 100%);
 }
-
 
 /* Header */
 .site-header{
@@ -192,6 +192,7 @@ body{
   grid-template-columns:repeat(3, 1fr);
   gap:22px;
 }
+
 .card{
   background:var(--white);
   border:1px solid #eef0f5;
