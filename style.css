@@ -84,6 +84,7 @@ body{
   gap:12px;
   text-decoration:none;
   color:inherit;
+  gap: 20px;
 }
 .brand-badge {
   width: 60px;
@@ -429,6 +430,9 @@ body{
     padding:10px;
     z-index:100;          /* above header */
   }
+  @media (max-width: 640px){
+     .brand-name{ height: 28px; }
+     }
   .nav-list{flex-direction:column;}
   .nav-toggle{display:flex;}
   .brand-name{font-size:16px}
