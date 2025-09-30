@@ -34,7 +34,7 @@ body{
   color:var(--text);
   background:var(--white);
 }
-
+.brand-name { height: 70px; max-width: 100%; object-fit: contain; display: block; }
 /* Containers */
 .container{
   width:min(1350px, 92%);
